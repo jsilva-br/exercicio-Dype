@@ -1,0 +1,32 @@
+body,html,#menu ul {
+	margin: 0;
+	padding: 0;
+}
+#cabecalho {
+	line-height: 80px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #CCC;
+}
+#cabecalho h1 {
+	color: #990000;
+	margin: 0;
+}
+#menu {
+	background: lightcoral;
+}
+#menu li {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+#menu li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #000;
+}
+#rodape {
+	background-color: #EEE;
+	text-align: center;
+}

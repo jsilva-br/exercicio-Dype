@@ -1,0 +1,9 @@
+﻿<?php                                       // Inicia o PHP
+$db = new Db();                             // cria uma nova instância e  e armazena na variavel $db
+$rs = $db->query(“select * from pessoa”);   // executa o comendo select na tabela "pessoa" e armazena na variavel $rs
+$n = array(); 								//cria uma variavel em formado de array
+while($data = $rs->FetchRow()){ 			// Com o While ele fará um laço de repetição enquanto houver registros e com o FetchRow ele retorna o numero de string da linha obtida e armazena na variavel $data
+     $n[] = $data[“nome”];	                // a array $n receberá os valores da array $data
+}											// aqui ele finaliza o laço de repetição while
+echo implode(“<br/>”,$n);                   //escreve na tela implementando o conteudo da variavel $n, colocando um valor a baixo do outro pois tem um quebra de linha "<br/>" 
+?>                                          //Finaliza o PHP
